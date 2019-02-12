@@ -1,0 +1,14 @@
+# encoding: utf-8
+from rest_framework.views import APIView
+from rest_framework.response import Response
+import sys
+
+default_encoding = 'utf-8'
+if sys.getdefaultencoding() != default_encoding:
+    reload(sys)
+    sys.setdefaultencoding(default_encoding)
+
+
+class TestView(APIView):
+    def get(self, request, *args, **kwargs):
+        return Response("测试api")

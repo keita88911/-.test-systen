@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>惠商测试部管理系统</title>
+</head>
+<body>
+
+
+
+<form action="" method="post" id="usrform" name="form1">
+{#    <table style="padding: 0;margin: 0;	position: relative;	margin: 10px;">#}
+        {% csrf_token %}
+            <p style="text-align: center;font-size: 25px;">新增接口</p>
+<div style="float: left;width: 60%">
+    <div style="border: 1px solid black;width: 75%;text-align: center;
+-moz-box-shadow:3px -2px 20px #190D33; -webkit-box-shadow:3px -2px 20px #190D33; box-shadow:3px -2px 20px #190D33;height: 1040px;">
+        <p>  接口名:</p>
+    <textarea rows="1" cols="30" name="text" form="usrform" STYLE=" width: 264px; height: 19px;">{{ text }}</textarea>
+    <p>  HEADER:</p>
+    <textarea rows="6" cols="80" name="text" form="usrform">{{ text }}</textarea>
+        <p>  URL:</p>
+    <textarea rows="1" cols="30" name="text" form="usrform" STYLE=" width: 264px; height: 19px;">{{ text }}</textarea>
+            <p>  DATA:</p>
+    <textarea rows="10" cols="80" name="text" form="usrform">{{ text }}</textarea>
+                <p>  SQL:</p>
+    <textarea rows="5" cols="80" name="text" form="usrform">{{ text }}</textarea>
+                    <p>  RESPONES:</p>
+    <textarea rows="5" cols="80" name="text" form="usrform">{{ text }}</textarea>
+
+   <p> </p><input type="submit" value="调试" style="width:80px;height:30px;" form="usrform"#}
+              onclick="javascript:{this.disabled=true;document.form1.submit();}">
+        <input type="submit" value="创建" style="width:80px;height:30px;" form="usrform"#}
+                       onclick="javascript:{this.disabled=true;document.form1.submit();}">
+                <input type="submit" value="返回" style="width:80px;height:30px;" form="usrform" name="back"></td>
+    </div>
+</div>
+    </form>
+<form>
+    <div style="float: left;border: 1px solid black;text-align: center;
+-moz-box-shadow:3px -2px 20px #190D33; -webkit-box-shadow:3px -2px 20px #190D33; box-shadow:3px -2px 20px #190D33;;width: 30%;height: 1040px;">
+
+        <p style="text-align: center">全局变量</p>
+        <input type="text" id="fyZldz" name="mark" value={{ phonename }}> ：  <input type="text" id="fyZldz" name="mark" value={{ phonename }}>
+           </div>
+</form>
+
+{#                权限:#}
+{#                <select name="roleid" id="fyStatus" class="ui_select01">#}
+{#                    <option value="">--请选择--</option>#}
+{#                    <option value="1">管理员</option>#}
+{#                    <option value="2">普通人员</option>#}
+{##}
+{#                </select>#}
+{#            </td>#}
+{#        </tr>#}
+{#        <tr>#}
+{#            <td>#}
+{#                <input type="submit" value="提交" style="width:80px;height:30px;" form="usrform"#}
+{#                       onclick="javascript:{this.disabled=true;document.form1.submit();}">#}
+{#                <input type="submit" value="返回" style="width:80px;height:30px;" form="usrform" name="back"></td>#}
+{#        </tr>#}
+{#    </table>#}
+{#</form>#}
+{##}
+{##}
+{#</body>#}
+{#<!--{% if result  %}-->#}
+{#    <!--<script>-->#}
+{#    <!--alert( "添加成功");-->#}
+{#    <!--</script>-->#}
+{#    <!--{% endif %}-->#}
+{#{% if result %}#}
+{#{% ifequal result '创建成功' %}#}
+{#<script type="text/javascript">#}
+{#    var List = {{ msg|safe }};#}
+{#    alert(List);#}
+{##}
+{#    window.location.href = "/personal-management";#}
+{##}
+{#</script>#}
+{#{% else %}#}
+{#<script type="text/javascript">#}
+{#    var List = {{ msg|safe }};#}
+{#    alert(List);#}
+{#</script>#}
+{#{% endifequal %}#}
+{#{% endif %}#}
+{#</html>#}

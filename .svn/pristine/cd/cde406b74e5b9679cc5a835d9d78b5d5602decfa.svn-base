@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>惠商测试部管理系统</title>
+</head>
+<body>
+
+
+{#<div  style="padding-top:130px ; margin:0 auto; width:320px; height:600px; ">#}
+<form action="" method="post" id="usrform" name="form1">
+    <table style="padding: 0;margin: 0;	position: relative;	margin: 0 auto;">
+
+        {% csrf_token %}
+        <tr>
+            <th class="form-signin-heading">用户信息</th>
+
+        </tr>
+        <tr>
+            <td> 姓名: <input type="text" name="username" style="width:250px;height:18px" value=""></td>
+        </tr>
+        <tr>
+            <td>
+                密码: <input type="text" name="password" style="width:250px;height:18px" value=""></td>
+        </tr>
+        <tr>
+            <td>
+                权限:
+                <select name="roleid" id="fyStatus" class="ui_select01">
+                    <option value="">--请选择--</option>
+                    <option value="1">管理员</option>
+                    <option value="2">普通人员</option>
+
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="提交" style="width:80px;height:30px;" form="usrform"
+                       onclick="javascript:{this.disabled=true;document.form1.submit();}">
+                <input type="submit" value="返回" style="width:80px;height:30px;" form="usrform" name="back"></td>
+        </tr>
+    </table>
+</form>
+
+
+
+</body>
+<!--{% if result  %}-->
+    <!--<script>-->
+    <!--alert( "添加成功");-->
+    <!--</script>-->
+    <!--{% endif %}-->
+{% if result %}
+{% ifequal result '创建成功' %}
+<script type="text/javascript">
+    var List = {{ msg|safe }};
+    alert(List);
+
+    window.location.href = "/personal-management";
+
+</script>
+{% else %}
+<script type="text/javascript">
+    var List = {{ msg|safe }};
+    alert(List);
+</script>
+{% endifequal %}
+{% endif %}
+</html>

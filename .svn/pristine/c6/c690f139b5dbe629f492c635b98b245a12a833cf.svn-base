@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<title>惠商测试部管理系统</title>
+</head>
+<div style="border: 1px solid black;width: 80%;text-align: center;
+-moz-box-shadow:3px -2px 20px #190D33; -webkit-box-shadow:3px -2px 20px #190D33; box-shadow:3px -2px 20px #190D33;;margin: auto;height: 785px;">
+<table >
+<form action="/add" method="post" id="usrform" name="form1">
+         {% csrf_token %}
+   <br> 标题: </br>
+  <p><input type="text" name="title" style="width:250px;height:18px" value={{title}}></p>
+
+<br>内容:</br>
+<textarea rows="40" cols="100" name="text" form="usrform"  style="height: 600px;" >{{text}}
+</textarea>
+</br>
+  <input type="submit" value="提交" style="width:80px;height:30px;" form="usrform"   name="add">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="submit" value="返回" style="width:80px;height:30px;" form="usrform" name="back">
+
+
+    </form>
+</table>
+</div>
+    <!--{% if result  %}-->
+    <!--<script>-->
+<!--alert( "添加成功");-->
+<!--</script>-->
+<!--{% endif %}-->
+    {% if result  %}
+         {% ifequal result  '创建成功' %}
+    <script type="text/javascript">
+alert( "添加成功");
+ window.location.href ="/week-report";
+
+</script>
+    {% else %}
+        <script>
+alert( "请填入标题和内容");
+</script>
+{% endifequal %}
+{% endif %}
+
+     <script>
+function test()
+{
+var abc=document.getElementById('abc');
+abc.disabled=true;
+document.form1.submit();
+//这里可以放文本域文字消失代码，可我实在想不明白你的意思，再加上代码应该也不难，所以你可以在这里自己加上
+setTimeout("abc.disabled=false;",3000); //代码核心在这里，3秒还原按钮代码
+}
+</script>
+</html>

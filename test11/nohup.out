@@ -1,0 +1,572 @@
+[21/Dec/2018 03:17:44] "GET /index HTTP/1.1" 200 2204
+[21/Dec/2018 03:18:03] "GET /index HTTP/1.1" 200 2204
+[21/Dec/2018 03:18:14] "GET /index HTTP/1.1" 200 2204
+[21/Dec/2018 03:18:59] "POST /index HTTP/1.1" 200 2284
+[21/Dec/2018 03:19:04] "POST /index HTTP/1.1" 302 0
+[21/Dec/2018 03:19:04] "GET /index_1 HTTP/1.1" 200 32031
+[21/Dec/2018 03:19:39] "GET /index HTTP/1.1" 200 2204
+[21/Dec/2018 03:20:08] "GET /borrow-phone HTTP/1.1" 200 137781
+[21/Dec/2018 03:20:09] "GET /week-report HTTP/1.1" 200 52760
+[21/Dec/2018 03:20:10] "GET /borrow-phone HTTP/1.1" 200 137781
+[21/Dec/2018 03:20:10] "GET /password-updata HTTP/1.1" 200 825
+[21/Dec/2018 03:20:11] "GET /personal-management HTTP/1.1" 200 25096
+[21/Dec/2018 03:20:44] "GET /password-updata HTTP/1.1" 200 825
+[21/Dec/2018 03:20:45] "GET /borrow-phone HTTP/1.1" 200 137781
+[21/Dec/2018 03:21:16] "GET /borrow-phone HTTP/1.1" 200 137781
+[21/Dec/2018 03:21:17] "GET /week-report HTTP/1.1" 200 52760
+[21/Dec/2018 03:32:55] "GET /password-updata HTTP/1.1" 200 825
+[21/Dec/2018 03:33:50] "GET /borrow-phone HTTP/1.1" 200 137781
+[21/Dec/2018 03:33:51] "GET /password-updata HTTP/1.1" 200 825
+[21/Dec/2018 03:34:10] "GET /password-updata HTTP/1.1" 200 825
+[21/Dec/2018 03:34:10] "GET /borrow-phone HTTP/1.1" 200 137781
+[21/Dec/2018 03:34:11] "GET /week-report HTTP/1.1" 200 52760
+Not Found: /favicon.ico
+[WARNING][2018-12-21 03:35:26,074][base.py:152]Not Found: /favicon.ico
+[21/Dec/2018 03:35:26] "GET /favicon.ico HTTP/1.1" 404 5964
+[21/Dec/2018 03:39:48] "GET /personal-management HTTP/1.1" 200 25096
+[21/Dec/2018 03:39:54] "GET /password-updata HTTP/1.1" 200 825
+[21/Dec/2018 03:39:55] "GET /borrow-phone HTTP/1.1" 200 137781
+[21/Dec/2018 03:39:55] "GET /week-report HTTP/1.1" 200 52760
+[21/Dec/2018 03:39:58] "GET /week-report?page=2&person=&start=&end= HTTP/1.1" 200 52864
+[21/Dec/2018 03:39:59] "GET /week-report?page=3&person=&start=&end= HTTP/1.1" 200 52922
+[21/Dec/2018 03:39:59] "GET /week-report?page=4&person=&start=&end= HTTP/1.1" 200 53290
+[21/Dec/2018 03:40:00] "GET /week-report?page=5&person=&start=&end= HTTP/1.1" 200 53968
+[21/Dec/2018 03:40:01] "GET /week-report?page=6&person=&start=&end= HTTP/1.1" 200 53490
+[21/Dec/2018 03:40:03] "GET /week-report?page=8&person=&start=&end= HTTP/1.1" 200 53009
+[21/Dec/2018 03:40:05] "GET /week-report?page=6&person=&start=&end= HTTP/1.1" 200 53490
+[21/Dec/2018 03:40:06] "GET /week-report?page=7&person=&start=&end= HTTP/1.1" 200 53134
+[21/Dec/2018 03:40:06] "GET /week-report?page=9&person=&start=&end= HTTP/1.1" 200 36655
+[21/Dec/2018 03:42:11] "GET /index HTTP/1.1" 200 2204
+[21/Dec/2018 03:44:55] "GET / HTTP/1.0" 200 99
+[21/Dec/2018 03:44:58] "GET /personal-management HTTP/1.1" 200 25096
+[21/Dec/2018 03:45:10] "POST /personal-management HTTP/1.1" 200 29
+[21/Dec/2018 03:45:12] "GET /personal-management HTTP/1.1" 200 25096
+[21/Dec/2018 03:45:55] "GET / HTTP/1.1" 200 5332
+[21/Dec/2018 03:45:55] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+[21/Dec/2018 03:45:55] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+[21/Dec/2018 03:45:55] "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+[21/Dec/2018 03:45:55] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+[21/Dec/2018 03:45:55] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1735
+[21/Dec/2018 03:45:55] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121200
+[21/Dec/2018 03:45:55] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37045
+[21/Dec/2018 03:45:55] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+[21/Dec/2018 03:45:55] "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+[21/Dec/2018 03:45:55] "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+[21/Dec/2018 03:45:55] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+[WARNING][2018-12-21 03:45:56,140][base.py:152]Not Found: /favicon.ico
+[WARNING][2018-12-21 03:45:56,155][base.py:152]Not Found: /favicon.ico
+[21/Dec/2018 03:45:56] "GET /favicon.ico HTTP/1.1" 404 5964
+[21/Dec/2018 03:45:56] "GET /favicon.ico HTTP/1.1" 404 5964
+[21/Dec/2018 03:46:12] "GET /index HTTP/1.1" 200 2204
+[21/Dec/2018 03:46:12] "GET /static/css/style.css HTTP/1.1" 200 7033
+[21/Dec/2018 03:46:13] "GET /static/js/jquery.min.js HTTP/1.1" 200 96381
+[21/Dec/2018 03:46:13] "GET /static/images/bg.jpg HTTP/1.1" 200 24224
+[21/Dec/2018 03:46:13] "GET /static/images/icons.png HTTP/1.1" 200 1006
+[21/Dec/2018 03:46:20] "POST /index HTTP/1.1" 302 0
+[21/Dec/2018 03:46:20] "GET /index_1 HTTP/1.1" 200 32031
+[21/Dec/2018 03:46:20] "GET /static/style/authority/main_css.css HTTP/1.1" 200 2194
+[21/Dec/2018 03:46:20] "GET /static/style/authority/zTreeStyle.css HTTP/1.1" 200 8765
+[21/Dec/2018 03:46:20] "GET /static/scripts/zTree/jquery.ztree.core-3.2.js HTTP/1.1" 200 54376
+[21/Dec/2018 03:46:20] "GET /static/scripts/authority/commonAll.js HTTP/1.1" 200 2279
+[21/Dec/2018 03:46:21] "GET /static/scripts/jquery/jquery-1.7.1.js HTTP/1.1" 200 248260
+[21/Dec/2018 03:46:21] "GET /static/images/common/user.jpg HTTP/1.1" 200 718
+[21/Dec/2018 03:46:21] "GET /static/images/common/month.jpg HTTP/1.1" 200 611
+[21/Dec/2018 03:46:21] "GET /static/images/common/1_hover.jpg HTTP/1.1" 200 2210
+[21/Dec/2018 03:46:21] "GET /static/images/common/close.jpg HTTP/1.1" 200 1118
+[21/Dec/2018 03:46:21] "GET /static/images/common/date.jpg HTTP/1.1" 200 840
+[21/Dec/2018 03:46:21] "GET /static/images/common/nav_hide.png HTTP/1.1" 200 1710
+[21/Dec/2018 03:46:21] "GET /static/images/common/module_1.png HTTP/1.1" 200 5329
+[21/Dec/2018 03:46:21] "GET /static/images/common/nav_item_minus.jpg HTTP/1.1" 200 495
+[21/Dec/2018 03:46:21] "GET /static/images/common/nav_item_v_hover.jpg HTTP/1.1" 200 524
+[21/Dec/2018 03:46:21] "GET /static/images/common/nav_item_plus.jpg HTTP/1.1" 200 538
+[21/Dec/2018 03:46:23] "GET /static/style/authority/basic_layout.css HTTP/1.1" 200 1770
+[21/Dec/2018 03:46:23] "GET /static/style/authority/common_style.css HTTP/1.1" 200 4727
+[21/Dec/2018 03:46:23] "GET /static/scripts/fancybox/jquery.fancybox-1.3.4.js HTTP/1.1" 200 29398
+[21/Dec/2018 03:46:23] "GET /borrow-phone HTTP/1.1" 200 137781
+[21/Dec/2018 03:46:23] "GET /static/scripts/fancybox/jquery.fancybox-1.3.4.pack.js HTTP/1.1" 200 15624
+[21/Dec/2018 03:46:23] "GET /static/style/authority/jquery.fancybox-1.3.4.css HTTP/1.1" 200 9223
+[21/Dec/2018 03:46:23] "GET /static/scripts/artDialog/artDialog.js?skin=default HTTP/1.1" 200 25087
+[21/Dec/2018 03:46:23] "GET /static/scripts/artDialog/skins/default.css?4.1.7 HTTP/1.1" 200 7933
+[21/Dec/2018 03:46:23] "GET /static/images/login/btn.jpg HTTP/1.1" 200 919
+[21/Dec/2018 03:46:23] "GET /static/scripts/artDialog/skins/icons/loading.gif HTTP/1.1" 200 381
+[21/Dec/2018 03:46:24] "GET /week-report HTTP/1.1" 200 52760
+[21/Dec/2018 03:46:24] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121205
+[21/Dec/2018 03:46:25] "GET /password-updata HTTP/1.1" 200 825
+[21/Dec/2018 03:46:27] "GET /personal-management HTTP/1.1" 200 25096
+[21/Dec/2018 03:46:43] "GET /borrow-phone HTTP/1.1" 200 137781
+[21/Dec/2018 03:46:45] "GET /static/images/login/btn_hover.jpg HTTP/1.1" 200 2046
+[21/Dec/2018 03:53:21] "GET / HTTP/1.1" 200 5324
+[21/Dec/2018 03:53:21] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+[21/Dec/2018 03:53:21] "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+[21/Dec/2018 03:53:21] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+[21/Dec/2018 03:53:21] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+[21/Dec/2018 03:53:21] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1735
+[21/Dec/2018 03:53:21] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121200
+[21/Dec/2018 03:53:21] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37045
+[21/Dec/2018 03:53:21] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+[21/Dec/2018 03:53:21] "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+[21/Dec/2018 03:53:21] "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+[21/Dec/2018 03:53:22] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Not Found: /favicon.ico
+[WARNING][2018-12-21 03:53:22,380][base.py:152]Not Found: /favicon.ico
+[21/Dec/2018 03:53:22] "GET /favicon.ico HTTP/1.1" 404 5962
+[21/Dec/2018 03:53:35] "OPTIONS / HTTP/1.1" 200 5409
+[21/Dec/2018 03:53:56] "GET / HTTP/1.1" 200 5324
+[21/Dec/2018 03:53:58] "GET /api-auth/login/?next=/ HTTP/1.1" 200 2703
+[21/Dec/2018 03:54:14] "POST /api-auth/login/ HTTP/1.1" 200 2941
+[21/Dec/2018 03:54:20] "POST /api-auth/login/ HTTP/1.1" 200 2941
+[21/Dec/2018 03:55:10] "GET /index HTTP/1.1" 200 2204
+[21/Dec/2018 03:55:16] "POST /api-auth/login/ HTTP/1.1" 200 2941
+[21/Dec/2018 03:55:28] "POST /api-auth/login/ HTTP/1.1" 200 2941
+[21/Dec/2018 03:56:15] "POST /api-auth/login/ HTTP/1.1" 200 2941
+[21/Dec/2018 03:56:19] "POST /api-auth/login/ HTTP/1.1" 200 2941
+[21/Dec/2018 03:56:36] "POST /api-auth/login/ HTTP/1.1" 200 2941
+[21/Dec/2018 03:57:00] "POST /api-auth/login/ HTTP/1.1" 200 2941
+[21/Dec/2018 04:10:58] "GET /index HTTP/1.1" 200 2204
+[21/Dec/2018 04:12:22] "GET /index HTTP/1.1" 200 2204
+[21/Dec/2018 04:26:21] "GET / HTTP/1.1" 200 87
+[21/Dec/2018 04:27:46] "GET / HTTP/1.0" 200 99
+[21/Dec/2018 04:38:10] "GET /index HTTP/1.1" 200 2204
+[21/Dec/2018 04:47:18] "GET / HTTP/1.1" 200 87
+[21/Dec/2018 05:02:38] "GET /index HTTP/1.1" 200 2204
+[21/Dec/2018 05:02:42] "POST /index HTTP/1.1" 302 0
+[21/Dec/2018 05:02:42] "GET /index_1 HTTP/1.1" 200 32031
+[21/Dec/2018 05:03:03] "GET /index HTTP/1.1" 200 2204
+[21/Dec/2018 05:03:12] "POST /index HTTP/1.1" 200 2284
+[21/Dec/2018 05:03:18] "POST /index HTTP/1.1" 302 0
+[21/Dec/2018 05:03:18] "GET /index_1 HTTP/1.1" 200 32032
+[21/Dec/2018 05:32:23] "GET /index HTTP/1.1" 200 2204
+[21/Dec/2018 05:32:23] "GET /static/css/style.css HTTP/1.1" 200 7033
+[21/Dec/2018 05:32:23] "GET /static/js/jquery.min.js HTTP/1.1" 200 96381
+[21/Dec/2018 05:32:23] "GET /static/images/bg.jpg HTTP/1.1" 200 24224
+[21/Dec/2018 05:32:23] "GET /static/images/icons.png HTTP/1.1" 200 1006
+Not Found: /images/common/nav_show.png
+[WARNING][2018-12-21 05:33:31,203][base.py:152]Not Found: /images/common/nav_show.png
+[21/Dec/2018 05:33:31] "GET /images/common/nav_show.png HTTP/1.1" 404 6009
+Not Found: /images/common/nav_hide.png
+[WARNING][2018-12-21 05:33:31,740][base.py:152]Not Found: /images/common/nav_hide.png
+[21/Dec/2018 05:33:31] "GET /images/common/nav_hide.png HTTP/1.1" 404 6009
+Not Found: /images/common/nav_show.png
+[WARNING][2018-12-21 05:33:33,080][base.py:152]Not Found: /images/common/nav_show.png
+[21/Dec/2018 05:33:33] "GET /images/common/nav_show.png HTTP/1.1" 404 6009
+Not Found: /images/common/nav_hide.png
+[WARNING][2018-12-21 05:33:33,843][base.py:152]Not Found: /images/common/nav_hide.png
+[21/Dec/2018 05:33:33] "GET /images/common/nav_hide.png HTTP/1.1" 404 6009
+Not Found: /images/common/nav_show.png
+[WARNING][2018-12-21 05:33:34,348][base.py:152]Not Found: /images/common/nav_show.png
+[21/Dec/2018 05:33:34] "GET /images/common/nav_show.png HTTP/1.1" 404 6009
+Not Found: /images/common/nav_hide.png
+[WARNING][2018-12-21 05:33:35,743][base.py:152]Not Found: /images/common/nav_hide.png
+[21/Dec/2018 05:33:35] "GET /images/common/nav_hide.png HTTP/1.1" 404 6009
+[21/Dec/2018 05:33:38] "GET /week-report HTTP/1.1" 200 52760
+[21/Dec/2018 05:33:40] "GET /index_1 HTTP/1.1" 200 32032
+[21/Dec/2018 05:33:40] "GET /static/style/authority/main_css.css HTTP/1.1" 304 0
+[21/Dec/2018 05:33:41] "GET /static/style/authority/zTreeStyle.css HTTP/1.1" 304 0
+[21/Dec/2018 05:33:41] "GET /static/scripts/jquery/jquery-1.7.1.js HTTP/1.1" 304 0
+[21/Dec/2018 05:33:41] "GET /static/scripts/zTree/jquery.ztree.core-3.2.js HTTP/1.1" 304 0
+[21/Dec/2018 05:33:41] "GET /static/scripts/authority/commonAll.js HTTP/1.1" 304 0
+[21/Dec/2018 05:33:41] "GET /static/images/common/user.jpg HTTP/1.1" 304 0
+[21/Dec/2018 05:33:41] "GET /static/images/common/month.jpg HTTP/1.1" 304 0
+[21/Dec/2018 05:33:41] "GET /static/images/common/date.jpg HTTP/1.1" 304 0
+[21/Dec/2018 05:33:41] "GET /static/images/common/close.jpg HTTP/1.1" 304 0
+[21/Dec/2018 05:33:41] "GET /static/images/common/1_hover.jpg HTTP/1.1" 304 0
+[21/Dec/2018 05:33:41] "GET /static/images/common/nav_hide.png HTTP/1.1" 304 0
+[21/Dec/2018 05:33:41] "GET /static/images/common/module_1.png HTTP/1.1" 304 0
+[21/Dec/2018 05:33:41] "GET /static/images/common/nav_item_minus.jpg HTTP/1.1" 304 0
+[21/Dec/2018 05:33:41] "GET /static/images/common/nav_item_plus.jpg HTTP/1.1" 304 0
+[21/Dec/2018 05:33:41] "GET /static/images/common/nav_item_v_hover.jpg HTTP/1.1" 304 0
+Not Found: /images/common/nav_show.png
+[WARNING][2018-12-21 05:33:42,771][base.py:152]Not Found: /images/common/nav_show.png
+[21/Dec/2018 05:33:42] "GET /images/common/nav_show.png HTTP/1.1" 404 6009
+Not Found: /images/common/nav_hide.png
+[WARNING][2018-12-21 05:33:44,363][base.py:152]Not Found: /images/common/nav_hide.png
+[21/Dec/2018 05:33:44] "GET /images/common/nav_hide.png HTTP/1.1" 404 6009
+[21/Dec/2018 05:34:31] "GET /index HTTP/1.1" 200 2204
+[21/Dec/2018 05:34:31] "GET /static/js/jquery.min.js HTTP/1.1" 200 96381
+[21/Dec/2018 05:34:31] "GET /static/css/style.css HTTP/1.1" 200 7033
+[21/Dec/2018 05:34:32] "GET /static/images/icons.png HTTP/1.1" 200 1006
+[21/Dec/2018 05:34:32] "GET /static/images/bg.jpg HTTP/1.1" 200 24224
+Not Found: /favicon.ico
+[WARNING][2018-12-21 05:34:32,165][base.py:152]Not Found: /favicon.ico
+[21/Dec/2018 05:34:32] "GET /favicon.ico HTTP/1.1" 404 5964
+[21/Dec/2018 05:35:10] "POST /index HTTP/1.1" 302 0
+[21/Dec/2018 05:35:10] "GET /index_1 HTTP/1.1" 200 32031
+[21/Dec/2018 05:35:11] "GET /static/scripts/authority/commonAll.js HTTP/1.1" 200 2279
+[21/Dec/2018 05:35:11] "GET /static/style/authority/zTreeStyle.css HTTP/1.1" 200 8765
+[21/Dec/2018 05:35:11] "GET /static/scripts/zTree/jquery.ztree.core-3.2.js HTTP/1.1" 200 54376
+[21/Dec/2018 05:35:11] "GET /static/style/authority/main_css.css HTTP/1.1" 200 2194
+[21/Dec/2018 05:35:11] "GET /static/images/common/month.jpg HTTP/1.1" 200 611
+[21/Dec/2018 05:35:11] "GET /static/images/common/1_hover.jpg HTTP/1.1" 200 2210
+[21/Dec/2018 05:35:11] "GET /static/images/common/user.jpg HTTP/1.1" 200 718
+[21/Dec/2018 05:35:11] "GET /static/images/common/date.jpg HTTP/1.1" 200 840
+[21/Dec/2018 05:35:11] "GET /static/images/common/close.jpg HTTP/1.1" 200 1118
+[21/Dec/2018 05:35:11] "GET /static/images/common/module_1.png HTTP/1.1" 200 5329
+[21/Dec/2018 05:35:11] "GET /static/images/common/nav_hide.png HTTP/1.1" 200 1710
+[21/Dec/2018 05:35:11] "GET /static/scripts/jquery/jquery-1.7.1.js HTTP/1.1" 200 248260
+Not Found: /favicon.ico
+[WARNING][2018-12-21 05:35:11,647][base.py:152]Not Found: /favicon.ico
+[21/Dec/2018 05:35:11] "GET /favicon.ico HTTP/1.1" 404 5964
+[21/Dec/2018 05:35:11] "GET /static/images/common/nav_item_minus.jpg HTTP/1.1" 200 495
+[21/Dec/2018 05:35:11] "GET /static/images/common/nav_item_plus.jpg HTTP/1.1" 200 538
+[21/Dec/2018 05:35:11] "GET /static/images/common/nav_item_v_hover.jpg HTTP/1.1" 200 524
+[21/Dec/2018 05:35:27] "GET /week-report HTTP/1.1" 200 52760
+[21/Dec/2018 05:35:27] "GET /static/style/authority/common_style.css HTTP/1.1" 200 4727
+[21/Dec/2018 05:35:27] "GET /static/scripts/fancybox/jquery.fancybox-1.3.4.pack.js HTTP/1.1" 200 15624
+[21/Dec/2018 05:35:27] "GET /static/style/authority/basic_layout.css HTTP/1.1" 200 1770
+[21/Dec/2018 05:35:27] "GET /static/scripts/fancybox/jquery.fancybox-1.3.4.js HTTP/1.1" 200 29398
+[21/Dec/2018 05:35:27] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121205
+[21/Dec/2018 05:35:28] "GET /static/images/login/btn.jpg HTTP/1.1" 200 919
+[21/Dec/2018 05:35:28] "GET /borrow-phone HTTP/1.1" 200 137781
+[21/Dec/2018 05:35:28] "GET /static/style/authority/jquery.fancybox-1.3.4.css HTTP/1.1" 200 9223
+[21/Dec/2018 05:35:28] "GET /static/scripts/artDialog/artDialog.js?skin=default HTTP/1.1" 200 25087
+[21/Dec/2018 05:35:29] "GET /static/scripts/artDialog/skins/default.css?4.1.7 HTTP/1.1" 200 7933
+[21/Dec/2018 05:35:29] "GET /static/images/authority/blank.gif HTTP/1.1" 200 43
+[21/Dec/2018 05:35:29] "GET /static/scripts/artDialog/skins/icons/loading.gif HTTP/1.1" 200 381
+[21/Dec/2018 05:35:39] "GET /password-updata HTTP/1.1" 200 825
+[21/Dec/2018 05:35:58] "GET /personal-management HTTP/1.1" 200 25096
+[21/Dec/2018 05:36:05] "GET /week-report HTTP/1.1" 200 52760
+[21/Dec/2018 05:36:12] "GET /week-report?page=2&person=&start=&end= HTTP/1.1" 200 52864
+[21/Dec/2018 05:36:15] "GET /week-report?page=3&person=&start=&end= HTTP/1.1" 200 52922
+[21/Dec/2018 05:38:50] "GET /week-report HTTP/1.1" 200 52760
+[21/Dec/2018 05:38:52] "GET /borrow-phone HTTP/1.1" 200 137781
+[21/Dec/2018 05:38:52] "GET /week-report HTTP/1.1" 200 52760
+[21/Dec/2018 05:41:33] "GET /week-report?page=4&person=&start=&end= HTTP/1.1" 200 53290
+[21/Dec/2018 05:41:34] "GET /static/images/login/btn_hover.jpg HTTP/1.1" 200 2046
+[21/Dec/2018 05:41:35] "POST /week-report?page=4&person=&start=&end= HTTP/1.1" 302 0
+[21/Dec/2018 05:41:35] "GET /detail HTTP/1.1" 200 700
+[21/Dec/2018 05:41:46] "GET /week-report?page=4&person=&start=&end= HTTP/1.1" 200 53290
+[21/Dec/2018 05:41:48] "GET /week-report?page=3&person=&start=&end= HTTP/1.1" 200 52922
+[21/Dec/2018 05:41:49] "GET /week-report?page=2&person=&start=&end= HTTP/1.1" 200 52864
+[21/Dec/2018 05:41:50] "GET /week-report HTTP/1.1" 200 52760
+[21/Dec/2018 05:42:33] "GET /index_1 HTTP/1.1" 302 0
+[21/Dec/2018 05:42:33] "GET /index HTTP/1.1" 200 2204
+[21/Dec/2018 05:42:33] "GET /static/css/style.css HTTP/1.1" 200 7033
+[21/Dec/2018 05:42:34] "GET /static/js/jquery.min.js HTTP/1.1" 200 96381
+[21/Dec/2018 05:42:34] "GET /static/images/icons.png HTTP/1.1" 200 1006
+[21/Dec/2018 05:42:34] "GET /static/images/bg.jpg HTTP/1.1" 200 24224
+Not Found: /favicon.ico
+[WARNING][2018-12-21 05:42:34,578][base.py:152]Not Found: /favicon.ico
+[21/Dec/2018 05:42:34] "GET /favicon.ico HTTP/1.1" 404 5964
+[21/Dec/2018 05:42:43] "POST /index HTTP/1.1" 200 2204
+[21/Dec/2018 05:42:53] "POST /index HTTP/1.1" 200 2284
+[21/Dec/2018 05:43:02] "POST /index HTTP/1.1" 302 0
+[21/Dec/2018 05:43:02] "GET /index_1 HTTP/1.1" 200 32031
+[21/Dec/2018 05:43:02] "GET /static/style/authority/main_css.css HTTP/1.1" 200 2194
+[21/Dec/2018 05:43:02] "GET /static/style/authority/zTreeStyle.css HTTP/1.1" 200 8765
+[21/Dec/2018 05:43:02] "GET /static/scripts/zTree/jquery.ztree.core-3.2.js HTTP/1.1" 200 54376
+[21/Dec/2018 05:43:02] "GET /static/scripts/authority/commonAll.js HTTP/1.1" 200 2279
+[21/Dec/2018 05:43:03] "GET /static/images/common/user.jpg HTTP/1.1" 200 718
+[21/Dec/2018 05:43:03] "GET /static/images/common/month.jpg HTTP/1.1" 200 611
+[21/Dec/2018 05:43:03] "GET /static/images/common/date.jpg HTTP/1.1" 200 840
+[21/Dec/2018 05:43:03] "GET /static/images/common/close.jpg HTTP/1.1" 200 1118
+[21/Dec/2018 05:43:03] "GET /static/scripts/jquery/jquery-1.7.1.js HTTP/1.1" 200 248260
+[21/Dec/2018 05:43:03] "GET /static/images/common/1_hover.jpg HTTP/1.1" 200 2210
+[21/Dec/2018 05:43:03] "GET /static/images/common/nav_hide.png HTTP/1.1" 200 1710
+[21/Dec/2018 05:43:03] "GET /static/images/common/module_1.png HTTP/1.1" 200 5329
+[21/Dec/2018 05:43:03] "GET /static/images/common/nav_item_v_hover.jpg HTTP/1.1" 200 524
+[21/Dec/2018 05:43:03] "GET /static/images/common/nav_item_minus.jpg HTTP/1.1" 200 495
+[21/Dec/2018 05:43:03] "GET /static/images/common/nav_item_plus.jpg HTTP/1.1" 200 538
+[21/Dec/2018 05:43:11] "GET /week-report HTTP/1.1" 200 52760
+[21/Dec/2018 05:43:11] "GET /static/style/authority/basic_layout.css HTTP/1.1" 200 1770
+[21/Dec/2018 05:43:11] "GET /static/style/authority/common_style.css HTTP/1.1" 200 4727
+[21/Dec/2018 05:43:11] "GET /static/scripts/fancybox/jquery.fancybox-1.3.4.pack.js HTTP/1.1" 200 15624
+[21/Dec/2018 05:43:11] "GET /static/scripts/fancybox/jquery.fancybox-1.3.4.js HTTP/1.1" 200 29398
+[21/Dec/2018 05:43:11] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 121205
+[21/Dec/2018 05:43:11] "GET /static/images/login/btn.jpg HTTP/1.1" 200 919
+[21/Dec/2018 05:43:14] "GET /borrow-phone HTTP/1.1" 200 137781
+[21/Dec/2018 05:43:14] "GET /static/style/authority/jquery.fancybox-1.3.4.css HTTP/1.1" 200 9223
+[21/Dec/2018 05:43:14] "GET /static/scripts/artDialog/artDialog.js?skin=default HTTP/1.1" 200 25087
+[21/Dec/2018 05:43:14] "GET /static/scripts/artDialog/skins/default.css?4.1.7 HTTP/1.1" 200 7933
+[21/Dec/2018 05:43:14] "GET /static/scripts/artDialog/skins/icons/loading.gif HTTP/1.1" 200 381
+[21/Dec/2018 05:47:19] "GET /index_1 HTTP/1.1" 200 32031
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 21, 2018 - 03:32:54
+Django version 1.11.16, using settings 'test11.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from `user` WHERE id ='110'
+管理员
+1
+SELECT * from `user` WHERE id ='110'
+管理员
+SELECT * from `user` WHERE id ='110'
+管理员
+1
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0193891525269 sec
+SELECT * from `user` WHERE id ='110'
+管理员
+1
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0235168933868 sec
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0198121070862 sec
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0196218490601 sec
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.023854970932 sec
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0227429866791 sec
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0161969661713 sec
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0171611309052 sec
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0203921794891 sec
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0219161510468 sec
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0200200080872 sec
+Time used: 5.81741333008e-05 sec
+Time used: 3.79085540771e-05 sec
+SQL Time used: 0.0152370929718 sec
+Time used: 0.0154399871826 sec
+SQL Time used: -1.90734863281e-06 sec
+1
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0203640460968 sec
+SELECT * from `user` WHERE id ='110'
+管理员
+1
+Time used: 4.88758087158e-05 sec
+Time used: 3.81469726562e-05 sec
+Time used: 3.81469726562e-05 sec
+Time used: 6.00814819336e-05 sec
+Time used: 4.31537628174e-05 sec
+SQL Time used: 0.0147819519043 sec
+Time used: 0.0517859458923 sec
+SQL Time used: -9.53674316406e-07 sec
+Time used: 3.69548797607e-05 sec
+SQL Time used: 0.0175650119781 sec
+Time used: 0.0585601329803 sec
+SQL Time used: -1.19209289551e-06 sec
+Time used: 3.81469726562e-05 sec
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0201201438904 sec
+SQL Time used: -9.53674316406e-07 sec
+Time used: 3.91006469727e-05 sec
+SQL Time used: 0.0145039558411 sec
+Time used: 0.014720916748 sec
+SQL Time used: -9.53674316406e-07 sec
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0207681655884 sec
+1
+SELECT * from `user` WHERE id ='110'
+管理员
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0217230319977 sec
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0188372135162 sec
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0160970687866 sec
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0189528465271 sec
+1
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0197989940643 sec
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0178129673004 sec
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0212378501892 sec
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0197858810425 sec
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0165951251984 sec
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.019495010376 sec
+Time used: 5.29289245605e-05 sec
+SQL Time used: 0.0174219608307 sec
+Time used: 0.0174779891968 sec
+SQL Time used: 0.0134520530701 sec
+Time used: 0.0136489868164 sec
+SQL Time used: -1.19209289551e-06 sec
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0157520771027 sec
+1
+SQL Time used: -9.53674316406e-07 sec
+SQL Ti[21/Dec/2018 05:47:23] "GET /index_1 HTTP/1.1" 200 32031
+[21/Dec/2018 05:47:24] "GET /index_1 HTTP/1.1" 200 32031
+[21/Dec/2018 05:54:11] "GET /index HTTP/1.1" 200 2204
+[21/Dec/2018 05:54:14] "GET /week-report HTTP/1.1" 200 52760
+[21/Dec/2018 05:54:16] "GET /borrow-phone HTTP/1.1" 200 137781
+[21/Dec/2018 05:54:19] "GET /borrow-phone HTTP/1.1" 200 137781
+[21/Dec/2018 05:54:19] "GET /week-report HTTP/1.1" 200 52760
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 21, 2018 - 05:54:07
+Django version 1.11.16, using settings 'test11.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Time used: 4.6968460083e-05 sec
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.023542881012 sec
+1
+1
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0231640338898 sec
+[21/Dec/2018 05:54:42] "GET /week-report HTTP/1.1" 200 52760
+[21/Dec/2018 05:54:43] "GET /borrow-phone HTTP/1.1" 200 137781
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 21, 2018 - 05:54:37
+Django version 1.11.16, using settings 'test11.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0200741291046 sec
+1
+[21/Dec/2018 07:01:39] "GET / HTTP/1.1" 200 5332
+[21/Dec/2018 07:01:39] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+[21/Dec/2018 07:01:39] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+[21/Dec/2018 07:01:39] "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+[21/Dec/2018 07:01:39] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+[21/Dec/2018 07:01:39] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1735
+[21/Dec/2018 07:01:39] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37045
+[21/Dec/2018 07:01:39] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121200
+[21/Dec/2018 07:01:39] "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+[21/Dec/2018 07:01:39] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+[21/Dec/2018 07:01:39] "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+[21/Dec/2018 07:01:39] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+[21/Dec/2018 07:01:57] "GET /index HTTP/1.1" 200 2204
+[21/Dec/2018 07:02:08] "POST /index HTTP/1.1" 200 2284
+[21/Dec/2018 07:02:14] "POST /index HTTP/1.1" 302 0
+[21/Dec/2018 07:02:15] "GET /index_1 HTTP/1.1" 200 32031
+[21/Dec/2018 07:02:28] "GET /week-report HTTP/1.1" 200 52760
+[21/Dec/2018 07:05:57] "GET / HTTP/1.0" 200 99
+[21/Dec/2018 07:22:50] "GET /index HTTP/1.1" 200 2204
+[21/Dec/2018 07:22:51] "POST /index HTTP/1.1" 302 0
+[21/Dec/2018 07:22:52] "GET /index_1 HTTP/1.1" 200 32132
+[21/Dec/2018 07:22:52] "GET /week-report HTTP/1.1" 200 52760
+[21/Dec/2018 07:22:56] "GET /borrow-phone HTTP/1.1" 200 137781
+[21/Dec/2018 07:22:56] "GET /week-report HTTP/1.1" 200 52760
+[21/Dec/2018 07:22:57] "GET /password-updata HTTP/1.1" 200 825
+[21/Dec/2018 07:22:58] "GET /personal-management HTTP/1.1" 200 25096
+[21/Dec/2018 07:23:01] "GET /index HTTP/1.1" 200 2204
+[21/Dec/2018 07:23:03] "POST /index HTTP/1.1" 302 0
+[21/Dec/2018 07:23:03] "GET /index_1 HTTP/1.1" 200 32132
+[21/Dec/2018 07:23:03] "GET /week-report HTTP/1.1" 200 52760
+[21/Dec/2018 07:23:05] "GET /borrow-phone HTTP/1.1" 200 137781
+[21/Dec/2018 07:29:02] "GET /week-report HTTP/1.1" 200 52760
+[21/Dec/2018 07:29:05] "GET /personal-management HTTP/1.1" 200 25096
+[21/Dec/2018 07:29:05] "GET /password-updata HTTP/1.1" 200 825
+[21/Dec/2018 07:29:06] "GET /borrow-phone HTTP/1.1" 200 137781
+[21/Dec/2018 07:29:07] "GET /personal-management HTTP/1.1" 200 25096
+[21/Dec/2018 07:29:08] "GET /week-report HTTP/1.1" 200 52760
+[21/Dec/2018 07:29:10] "GET /week-report?page=3&person=&start=&end= HTTP/1.1" 200 52922
+[21/Dec/2018 07:29:12] "GET /week-report?page=5&person=&start=&end= HTTP/1.1" 200 53968
+[21/Dec/2018 07:29:13] "GET /week-report?page=6&person=&start=&end= HTTP/1.1" 200 53490
+[21/Dec/2018 07:29:15] "GET /borrow-phone HTTP/1.1" 200 137781
+[21/Dec/2018 07:29:32] "GET /week-report HTTP/1.1" 200 52760
+[21/Dec/2018 07:30:25] "GET /borrow-phone HTTP/1.1" 200 137781
+[21/Dec/2018 07:30:29] "GET /week-report HTTP/1.1" 200 52760
+[21/Dec/2018 07:30:46] "GET /personal-management HTTP/1.1" 200 25096
+[21/Dec/2018 07:30:49] "GET /borrow-phone HTTP/1.1" 200 137781
+[21/Dec/2018 07:30:50] "GET /week-report HTTP/1.1" 200 52760
+[21/Dec/2018 07:30:51] "GET /borrow-phone HTTP/1.1" 200 137781
+Not Found: /favicon.ico
+[WARNING][2018-12-21 07:30:59,528][base.py:152]Not Found: /favicon.ico
+[21/Dec/2018 07:30:59] "GET /favicon.ico HTTP/1.1" 404 5964
+[21/Dec/2018 07:31:23] "GET /week-report HTTP/1.1" 200 52760
+[21/Dec/2018 07:31:25] "GET /borrow-phone HTTP/1.1" 200 137781
+[21/Dec/2018 07:31:26] "GET /week-report HTTP/1.1" 200 52760
+[21/Dec/2018 07:31:32] "GET /borrow-phone HTTP/1.1" 200 137781
+[21/Dec/2018 07:31:37] "GET /week-report HTTP/1.1" 200 52760
+[21/Dec/2018 07:31:41] "GET /borrow-phone HTTP/1.1" 200 137781
+[21/Dec/2018 07:31:48] "POST /borrow-phone HTTP/1.1" 200 137503
+[21/Dec/2018 07:31:52] "POST /borrow-phone HTTP/1.1" 200 14529
+[21/Dec/2018 07:31:54] "POST /borrow-phone HTTP/1.1" 200 137503
+[21/Dec/2018 07:32:07] "POST /borrow-phone HTTP/1.1" 200 137503
+[21/Dec/2018 07:33:52] "GET /week-report HTTP/1.1" 200 52760
+[21/Dec/2018 07:33:54] "GET /personal-management HTTP/1.1" 200 25096
+[21/Dec/2018 07:33:56] "GET /borrow-phone HTTP/1.1" 200 137781
+[21/Dec/2018 07:33:58] "GET /week-report HTTP/1.1" 200 52760
+[21/Dec/2018 07:33:59] "GET /borrow-phone HTTP/1.1" 200 137781
+[21/Dec/2018 07:34:03] "POST /borrow-phone HTTP/1.1" 200 114284
+Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[WARNING][2018-12-21 07:39:01,589][base.py:152]Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[21/Dec/2018 07:39:01] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 404 1729
+Performing system checks...
+
+System check identified no issues (0 silenced).
+December 21, 2018 - 07:01:37
+Django version 1.11.16, using settings 'test11.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+Time used: 3.81469726562e-05 sec
+SQL Time used: 0.0164179801941 sec
+Time used: 0.0551559925079 sec
+SQL Time used: -1.90734863281e-06 sec
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0219049453735 sec
+Time used: 4.60147857666e-05 sec
+SQL Time used: 0.0120320320129 sec
+Time used: 0.0508861541748 sec
+SQL Time used: -9.53674316406e-07 sec
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0229458808899 sec
+1
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0173900127411 sec
+SELECT * from `user` WHERE id ='110'
+管理员
+Time used: 5.19752502441e-05 sec
+SQL Time used: 0.0148510932922 sec
+Time used: 0.0538311004639 sec
+SQL Time used: -9.53674316406e-07 sec
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0190420150757 sec
+1
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0209860801697 sec
+SELECT * from `user` WHERE id ='110'
+管理员
+1
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0184268951416 sec
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0171830654144 sec
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0188269615173 sec
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0166509151459 sec
+1
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0174219608307 sec
+1
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0206558704376 sec
+1
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.022782087326 sec
+1
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0178778171539 sec
+1
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0168261528015 sec
+1
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0205450057983 sec
+1
+1
+SELECT * from `borrow_phone`where id like '%'and (datatime >'2018-12-21'  AND datatime <'2018-12-22 00:00:00')
+1
+SELECT * from `borrow_phone`where id like '%'and (datatime >'2018-12-21'  AND datatime <'2018-12-06 00:00:00')
+1
+SELECT * from `borrow_phone`where id like '%'and (datatime >'2018-12-21'  AND datatime <'2018-12-28 00:00:00')
+1
+SELECT * from `borrow_phone`where id like '%'and (datatime >'2018-12-21'  AND datatime <'2018-12-28 00:00:00')
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.0242578983307 sec
+1
+SELECT * from `week-report`where id like '%' ORDER BY createData DESC
+Time used: 0.02272605896 sec
+1
+1
+SELECT * from `borrow_phone`where id like '%'and state='1'

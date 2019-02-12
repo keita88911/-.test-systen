@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>测试哒哒哒(runoob.com)</title>
+</head>
+<body>
+    <form action="/search-post" method="post">
+        {% csrf_token %}
+        姓名：<input type="text" name="r">
+        <!--密码：<input type="text" name="password">-->
+
+        <input type="submit" value="Submit">
+
+    </form>
+ 
+    <p>{{ rlt }}</p>
+</body>
+</html>

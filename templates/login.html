@@ -1,0 +1,68 @@
+
+{% load staticfiles %}
+
+{% block title %}用户登陆 {% endblock %}
+
+{% block heading %}
+    <h1>LOGIN </h1>
+{% endblock %}
+
+{% block content %}
+   <div class="tm-middle">
+        <div class="uk-container uk-container-center">
+            <h3 class="tm-article-subtitle uk-margin-top">
+                用户登陆
+            </h3>
+           <hr class="uk-grid-divider">
+
+            <div class="uk-panel uk-panel-box uk-container-center uk-width-1-3">
+                <h3 class="uk-panel-title"><i class="uk-icon-user"></i>用户登陆</h3>
+
+                    <div class="uk-width-3-3">
+                        <div>
+                            <form action="/login" class="uk-form uk-form-horizontal" role="form" method="post">
+                            <form method="post" action="./?next={{ redirect_to }}">
+                                {% csrf_token %}
+                                <div class="uk-form-row">
+                                    <label for="id_username" class="uk-form-label" style="color: #e28327">用户名:</label>
+                                    <div class="uk-form-controls">
+                                    <input type="text" name="username" maxlength="100"
+                                        autocapitalize="off"
+                                        autocorrect="off" class="form-control textinput textInput"
+                                        id="id_username" required
+                                        {% if form.username.value %}value="{{ form.username.value }}"{% endif %}>
+                                    </div>
+                                    {% if form.username.errors %}
+                                        <p class="text-error">
+                                            不正确的用户名
+                                        </p>
+                                    {% endif %}
+                                </div>
+                                <div class="uk-form-row uk-width-3-3">
+                                    <label for="id_password" class="uk-form-label" style="color: #e28327">密码:</label>
+                                    <div class="uk-form-controls">
+                                        <input type="password" name="password" maxlength="100"
+                                            autocapitalize="off" autocorrect="off" class="form-control textinput textInput"
+                                            id="id_password" required>
+                                        {% if form.password.errors %}
+                                            <p class="text-error">
+                                                不正确的用户名或密码
+                                            </p>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <input type="hidden" name="next" value="{{ request.GET.next }}">
+                                {% if form.non_field_errors %}
+                                    {% for error in form.non_field_errors %}
+                                        <div class="well well-small text-error" style="border: none; color: red">请输入正确的用户名和密码</div>
+                                    {% endfor %}
+                                {% endif %}
+                                <button type="submit" class="uk-button uk-button-success uk-margin-top uk-float-right" id="submit-id-submit">登录</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div style="height:100px"></div>
+    {% endblock %}

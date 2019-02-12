@@ -1,0 +1,31 @@
+#!usr/bin/python
+# -*- coding: utf-8 -*-
+import requests
+import json
+import sys
+import api
+
+
+default_encoding = 'utf-8'
+if sys.getdefaultencoding() != default_encoding:
+    reload(sys)
+    sys.setdefaultencoding(default_encoding)
+
+
+class Api_Requests():
+    @classmethod
+    def api_request(self,header,host,url,data,sql=None):
+        headers = {header}  # 读取接口相关信息
+        url =host + url
+
+
+        payload = {data}
+        sql=sql
+        data = json.dumps(payload)
+        response = requests.request("POST", url, data=data, headers=headers)
+        # r = requests.post(url,data=payload,headers= headers)
+        response.text1 = json.loads(response.text)
+        print response.text
+
+# a=create()
+# a.addTD()

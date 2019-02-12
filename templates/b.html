@@ -1,0 +1,26 @@
+<form>
+<input type="file" name="theFile" onchange="document.getElementById('theFilePath').value=this.value"/>  
+
+ 
+
+<input type="hidden" id="theFilePath" name="theFilePath" value="">
+</form>
+
+
+    <script type="text/javascript">
+var url = getPath(document.getElementByIdx_x("url"))
+function getPath(obj) {
+ if (obj) {
+  if (window.navigator.userAgent.indexOf("MSIE") >= 1) {
+   obj.select();
+   return document.selection.createRange().text;
+  } else if (window.navigator.userAgent.indexOf("Firefox") >= 1) {
+   if (obj.files) {
+    return obj.files.item(0).getAsDataURL();
+   }
+   return obj.value;
+  }
+  return obj.value;
+ }
+}
+</script>

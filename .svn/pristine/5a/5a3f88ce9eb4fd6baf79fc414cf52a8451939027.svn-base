@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<title>惠商测试部管理系统</title>
+</head>
+<form action="" method="post" id="usrform1">
+         {% csrf_token %}
+    <div  style=" border: 1px solid black;
+-moz-box-shadow:3px -2px 20px #190D33; -webkit-box-shadow:3px -2px 20px #190D33; box-shadow:3px -2px 20px #190D33;;height: 500px;text-align: center;margin: auto;width: 30%;">
+        <p>密码修改</p>
+  <p style="height: 60px;">姓名: <input type="text" name="username" style="width:250px;height:18px" value={{username}}   readonly  unselectable="on" ></p>
+
+<p style="height: 60px;"> 密码: <input type="text" name="password" style="width:250px;height:18px" value=""></p>
+    <p style="height: 80px;"> 权限:
+	<select name="roleid" id="fyStatus" class="ui_select01" >
+
+                                <option value={{ roleid }}>{{roleid_name}}</option>
+{#                                <option value="1">{{ roleid }}</option>#}
+{#                                <option value="2">普通人员</option>#}
+
+                            </select>
+    </p>
+  <input type="submit" value="修改并保存" style="width:100px;height:30px;"  name="edit">
+
+
+
+
+    </form>
+</div>
+    <!--{% if result  %}-->
+    <!--<script>-->
+<!--alert( "添加成功");-->
+<!--</script>-->
+<!--{% endif %}-->
+    {% if result  %}
+         {% ifequal result  '修改成功' %}
+    <script>
+alert( "修改成功");
+</script>
+    {% else %}
+        <script>
+alert( "请填入密码");
+</script>
+{% endifequal %}
+{% endif %}
+</html>

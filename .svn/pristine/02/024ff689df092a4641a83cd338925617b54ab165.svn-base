@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>惠商测试管理平台</title>
+</head>
+<body>
+    <form action="/week-report"method="post">
+
+        {% csrf_token %}
+        <!--&lt;!&ndash;<input  name="id" value= {{id}}  readOnly=true>&ndash;&gt;-->
+           <!--密码<input type="text" name="id">-->
+           <!--<input type="submit" value="Submit">-->
+          <!--wenb<input type="text" name="" value={{creaData}}>-->
+        <!--{{text}}-->
+
+    <!--<br />-->
+    <!--<tr><input type="text"  value="测试文档" name="username"  readOnly=true></tr> <br />-->
+    <!--<tr><input type="text"  value="测试文档2" name="username"  readOnly=true></tr><br />-->
+    <!--<tr><input type="text"  value="测试文档3" name="username"  readOnly=true></tr>-->
+
+
+
+ <input type="submit" value="新建" name="add" >
+    </form>
+
+
+<table border=1 cellspacing=0 width=100% bordercolorlight=#333333
+bordercolordark=#efefef>
+<tr bgcolor=#cccccc>
+    <th>标题</th>
+	<th>周报提交人</th>
+	<th>内容</th>
+	<!--<th>userid</th>-->
+	<th>创建日期</th>
+    	<th width="5%">操作</th>
+
+</tr>
+{%for text in data %}
+<tr>
+{% for key,v in text.items %}
+    {% ifequal key 'id' %}
+      {% else %}
+           {% ifequal key 'username' %}
+                <td width="3%">{{ v }}</td>
+
+          {% else %}
+                      {% ifequal key 'creatData' %}
+                          <td width="5%">{{ v }}</td>
+
+                      {% else %}
+                       {% ifequal key 'text' %}
+                          <td width="30%">{{ v }}</td>
+
+                      {% else %}
+                                         {% ifequal key 'title' %}
+                                        <td width="4%">{{ v }}</td>
+                                        {% else %}
+                          <td width="50%">{{ v }}</td>
+                        {% endifequal %}
+                        {% endifequal %}
+                        {% endifequal %}
+      {% endifequal %}
+    {% endifequal %}
+
+
+
+
+	{% endfor %}
+    	<td align="center"> <input type="submit" value="详情" name="detail"></td>
+</tr>
+{% endfor %}
+</table>
+<center>
+
+
+
+
+
+
+
+
+
+    <!--<p>{{result }}</p>-->
+</body>
+</html>

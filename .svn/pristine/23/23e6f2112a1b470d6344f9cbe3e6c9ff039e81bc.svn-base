@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="text/javascript" src="/static/scripts/jquery/jquery-1.7.1.js"></script>
+    <link href="/static/style/authority/basic_layout.css" rel="stylesheet" type="text/css">
+    <link href="/static/style/authority/common_style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/static/scripts/authority/commonAll.js"></script>
+    <script type="text/javascript" src="/static/scripts/fancybox/jquery.fancybox-1.3.4.js"></script>
+    <script type="text/javascript" src="/static/scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!--<link rel="stylesheet" href="/static/css/bootstrap-datetimepicker.min.css" />-->
+    <!--<script src="/static/js/jquery.min.js"></script>-->
+
+    <!--&lt;!&ndash; 最新的 Bootstrap 核心 JavaScript 文件 &ndash;&gt;-->
+    <!--<script src="/static/js/bootstrap.min.js"></script>-->
+
+    <!--<script src="static/js/moment-with-locales.js"></script>-->
+    <!--<script src="/static/js/bootstrap-datetimepicker.min.js"></script>-->
+
+
+    <title>惠商测试部管理系统</title>
+
+    <script type="text/javascript">
+
+
+        /** 用户角色   **/
+        var userRole = '';
+
+        /** 模糊查询来电用户  **/
+        function search() {
+            $("#submitForm").attr("action", "house_list.html?page=" + 1).submit();
+        }
+
+        /** 新增   **/
+        function add() {
+            $("#submitForm").attr("action", "/xngzf/archives/luruFangyuan.action").submit();
+        }
+
+        /** Excel导出  **/
+        function exportExcel() {
+            if (confirm('您确定要导出吗？')) {
+                var fyXqCode = $("#fyXq").val();
+                var fyXqName = $('#fyXq option:selected').text();
+//	 		alert(fyXqCode);
+                if (fyXqCode == "" || fyXqCode == null) {
+                    $("#fyXqName").val("");
+                } else {
+//	 			alert(fyXqCode);
+                    $("#fyXqName").val(fyXqName);
+                }
+                $("#submitForm").attr("action", "/xngzf/archives/exportExcelFangyuan.action").submit();
+            }
+        }
+
+        /** 删除 **/
+        function del(fyID) {
+            // 非空判断
+            if (fyID == '') return;
+            if (confirm("您确定要删除吗？")) {
+                $("#submitForm").attr("action", "/xngzf/archives/delFangyuan.action?fyID=" + fyID).submit();
+            }
+        }
+
+        /** 批量删除 **/
+        function batchDel() {
+            if ($("input[name='IDCheck']:checked").size() <= 0) {
+                art.dialog({icon: 'error', title: '友情提示', drag: false, resize: false, content: '至少选择一条', ok: true,});
+                return;
+            }
+            // 1）取出用户选中的checkbox放入字符串传给后台,form提交
+            var allIDCheck = "";
+            $("input[name='IDCheck']:checked").each(function (index, domEle) {
+                bjText = $(domEle).parent("td").parent("tr").last().children("td").last().prev().text();
+// 			alert(bjText);
+                // 用户选择的checkbox, 过滤掉“已审核”的，记住哦
+                if ($.trim(bjText) == "已审核") {
+// 				$(domEle).removeAttr("checked");
+                    $(domEle).parent("td").parent("tr").css({color: "red"});
+                    $("#resultInfo").html("已审核的是不允许您删除的，请联系管理员删除！！！");
+// 				return;
+                } else {
+                    allIDCheck += $(domEle).val() + ",";
+                }
+            });
+            // 截掉最后一个","
+            if (allIDCheck.length > 0) {
+                allIDCheck = allIDCheck.substring(0, allIDCheck.length - 1);
+                // 赋给隐藏域
+                $("#allIDCheck").val(allIDCheck);
+                if (confirm("您确定要批量删除这些记录吗？")) {
+                    // 提交form
+                    $("#submitForm").attr("action", "/xngzf/archives/batchDelFangyuan.action").submit();
+                }
+            }
+        }
+
+        /** 普通跳转 **/
+        function jumpNormalPage(page) {
+            $("#submitForm").attr("action", "house_list.html?page=" + page).submit();
+        }
+
+        /** 输入页跳转 **/
+        function jumpInputPage(totalPage) {
+            // 如果“跳转页数”不为空
+            if ($("#jumpNumTxt").val() != '') {
+                var pageNum = parseInt($("#jumpNumTxt").val());
+                // 如果跳转页数在不合理范围内，则置为1
+                if (pageNum < 1 | pageNum > totalPage) {
+                    art.dialog({
+                        icon: 'error',
+                        title: '友情提示',
+                        drag: false,
+                        resize: false,
+                        content: '请输入合适的页数，\n自动为您跳到首页',
+                        ok: true,
+                    });
+                    pageNum = 1;
+                }
+                $("#submitForm").attr("action", "house_list.html?page=" + pageNum).submit();
+            } else {
+                // “跳转页数”为空
+                art.dialog({
+                    icon: 'error',
+                    title: '友情提示',
+                    drag: false,
+                    resize: false,
+                    content: '请输入合适的页数，\n自动为您跳到首页',
+                    ok: true,
+                });
+                $("#submitForm").attr("action", +1).submit();
+            }
+        }
+    </script>
+    <style>
+
+
+        .alt td {
+            background: black !important;
+        }
+
+        body {
+            text-align: center
+        }
+
+        .div {
+            margin: 0 auto;
+            width: 400px;
+            height: 100px;
+            border: 1px
+        }
+    </style>
+</head>
+<body>
+
+<form id="submitForm" name="submitForm" action="" method="post">
+    {% csrf_token %}
+    <input type="hidden" name="allIDCheck" value="" id="allIDCheck"/>
+    <input type="hidden" name="fangyuanEntity.fyXqName" value="" id="fyXqName"/>
+    <div id="container">
+        <div class="ui_content">
+            <div class="ui_text_indent">
+                <div id="box_border">
+                    <div id="box_top">搜索</div>
+                    <div id="box_center">
+                        <!--小区-->
+                        <!--<select name="fangyuanEntity.fyXqCode" id="fyXq" class="ui_select01" onchange="getFyDhListByFyXqCode();">-->
+                        <!--<option value=""-->
+                        <!--&gt;&#45;&#45;请选择&#45;&#45;</option>-->
+                        <!--<option value="6">瑞景河畔</option>-->
+                        <!--<option value="77">蔚蓝小区</option>-->
+                        <!--<option value="83">和盛园小区</option>-->
+                        <!--</select>-->
+
+                        <!--栋号-->
+                        <!--<select name="fangyuanEntity.fyDhCode" id="fyDh" class="ui_select01">-->
+                        <!--<option value="">&#45;&#45;请选择&#45;&#45;</option>-->
+                        <!--</select>-->
+                        <!--户型-->
+                        <!--<select name="fangyuanEntity.fyHxCode" id="fyHx" class="ui_select01">-->
+                        <!--<option value="">&#45;&#45;请选择&#45;&#45;</option>-->
+                        <!--<option value="76">一室一厅一卫</option>-->
+                        <!--<option value="10">两室一厅一卫</option>-->
+                        <!--<option value="14">三室一厅一卫</option>-->
+                        <!--<option value="71">三室两厅一卫</option>-->
+                        <!--</select>-->
+                        <!--状态-->
+                        <!--<select name="fangyuanEntity.fyStatus" id="fyStatus" class="ui_select01">-->
+                        <!--<option value="">&#45;&#45;请选择&#45;&#45;</option>-->
+                        <!--<option value="26">在建</option>-->
+                        <!--<option value="25">建成待租</option>-->
+                        <!--<option value="13">已配租</option>-->
+                        <!--<option value="12">已租赁</option>-->
+                        <!--<option value="24">腾退待租</option>-->
+                        <!--<option value="23">欠费</option>-->
+                        <!--<option value="27">其他</option>-->
+                        <!--</select>-->
+
+                        提交人&nbsp;&nbsp;<input type="text" id="fyZldz" name="person" class="ui_input_txt02"
+                                              style="height: 25px" value={{ person }}>
+
+                        <label for="meeting">开始日期：</label><input
+                            style="height: 25px ;vertical-align: middle; text-align:left;	line-height: 15px;" id="meeting" type="date"
+                            name="start" class="ui_input_txt02" value={{ startdata }}>
+
+                        <label for="meeting1">结束日期：</label><input
+                            style="height: 25px ;vertical-align: middle; text-align:left; 	line-height: 15px;" id="meeting1" type="date"
+                            name="end" class="ui_input_txt02" value={{ enddata }}   >
+
+
+                    </div>
+                    <div id="box_bottom">
+                        <input type="submit" value="查询" class="ui_input_btn01" name="search"/>
+                        <input type="submit" value="新增" class="ui_input_btn01" name="add"/>
+
+                        <!--<input type="button" value="删除" class="ui_input_btn01" onclick="batchDel();" /> -->
+                        <!--<input type="button" value="导入" class="ui_input_btn01" id="importBtn" />-->
+                        <!--{#							<input type="button" value="导出" class="ui_input_btn01" onclick="exportExcel();" />#}-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui_content">
+            <!--<li class="ui_tb">-->
+
+            <table class="table" cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+
+                <th width="30"><input type="checkbox" id="all" onclick="selectOrClearAllCheckbox(this);"/>
+                </th>
+
+                <th>标题</th>
+                <th>提交人</th>
+                <th>内容</th>
+                <!--<th>userid</th>-->
+                <th>创建日期</th>
+                <th width="5%">操作</th>
+                <tbody id="tablelsw">
+
+
+                <c:forEach items="${scoreListAll}" var="sc" varStatus="status">
+
+                    <!--<table class="table" cellspacing="0" cellpadding="0" width="100%" align="left" border="0"  id="tableTest">-->
+
+                    {% for text in data %}
+                    <tr>
+
+                        <td width="3%"><input type="checkbox" name="IDCheck" value="14458579642011" class="acb"/></td>
+                        {% for key,v in text.items %}
+
+                        <!--{# &lt;!&ndash;<td  name="sn" value={{v}}></td>&ndash;&gt;#}-->
+                        <form id={{ text.id }} name="submitForm" action="" method="post" id="tableTest">
+                            {% csrf_token %}
+                            {% ifequal key 'id' %}
+
+                            <input type="hidden" name="workid" value={{ v }}>
+                            {% else %}
+
+                            {% ifequal key 'username' %}
+
+                            <td width="3%">{{ v }}</td>
+
+                            {% else %}
+                            {% ifequal key 'creatData' %}
+                            <td width="5%">{{ v }}</td>
+
+                            {% else %}
+                            {% ifequal key 'text' %}
+                            <td width="30%">{{ v }}</td>
+
+                            {% else %}
+                            {% ifequal key 'title' %}
+                            <td width="4%">{{ v }}</td>
+                            {% else %}
+                            <td width="50%">{{ v }}</td>
+
+                            {% endifequal %}
+                            {% endifequal %}
+                            {% endifequal %}
+                            {% endifequal %}
+                            {% endifequal %}
+
+
+                            {% endfor %}
+                            <div id="box_bottom2">
+
+                                <td align="center"><input type="submit" class="ui_input_btn01" value="详情" name="detail"
+                                                          id_data={{ text.id }}/></td>
+                                <!--<input type="submit" value="新增" class="ui_input_btn01"  name="add" />-->
+
+                                <!--<input type="button" value="删除" class="ui_input_btn01" onclick="batchDel();" /> -->
+                                <!--<input type="button" value="导入" class="ui_input_btn01" id="importBtn" />-->
+                                <!--<input type="button" value="导出" class="ui_input_btn01" onclick="exportExcel();" />-->
+                            </div>
+                        </form>
+
+                        <!--<td align="center"> <input type="submit" value="详情" name="detail"></td>-->
+                    </tr>
+
+
+                </c:forEach>
+                {% endfor %}
+                </tbody>
+            </table>
+
+
+
+            <li class="pagination">
+                <ul class="pagination">
+                    <li>
+                        {% if page_of_blogs.has_previous %}
+                            {#判断是否存在上一页#}
+                            <a href="?page={{ page_of_blogs.previous_page_number }}&person={{ person }}&start={{ startdata }}&end={{ enddata }}"
+                               aria-label="Previous">{#previous_page_number判断当前页#}
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        {% else %}
+                            <span aria-hidden="true">&laquo;</span>
+                        {% endif %}
+                    </li>
+                    {#总的页数#}
+                    {% for page_num in  range_page %}
+                        {% if page_num == page_of_blogs.number %}
+                            <li class="active">
+                                <span>{{ page_num }}</span>
+                            </li>{#当前页高亮#}
+                        {% else %}
+                            {% if page_num == '...' %}
+                                <li><span>{{ page_num }}</span></li>
+                            {% else %}
+                                <li>
+                                    <a href="?page={{ page_num }}&person={{ person }}&start={{ startdata }}&end={{ enddata }}">
+                                        {{ page_num }}
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                    {#判断是否存在下一页#}
+                    <li>
+                        {% if page_of_blogs.has_next %}
+                            <a href="?page={{ page_of_blogs.next_page_number }}&person={{ person }}&start={{ startdata }}&end={{ enddata }}"
+                               aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        {% else %}
+                            <span aria-hidden="true">&raquo;</span>
+                        {% endif %}
+                    </li>
+                </ul>
+                <p>
+                    (共{{ page_of_blogs.paginator.num_pages }}页，当前{{ page_of_blogs.number }}页，共有{{ page_of_blogs.paginator.count }}篇)</p>
+            </li>
+
+            <script>
+
+
+            </script>
+</body>
+</html>

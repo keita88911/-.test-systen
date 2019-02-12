@@ -1,0 +1,48 @@
+adb shell "logcat  | grep START
+
+
+
+adb shell dumpsys window w | findstr \/ | findstr name=
+
+monkey -s 12 --throttle 450 -p com.hyhs.hschefu.staff.ts --kill-process-after-error --ignore-timeouts --ignore-security-exceptions -v 10000
+
+com.sctf.mobile.ykt.android 一卡通APK
+
+chrome://inspect 手机接口测试
+
+
+pyinstaller --onefile  --icon=h12.ico   guitest2.py
+
+python manage.py runserver 0.0.0.0:8000
+
+抓元素工具：uiautomatorviewer.bat
+
+adb logcat string:D *:S  标签为string，优先级为Debug级别以上的
+adb logcat | grep string     管道过滤字符串，不管是不是标签
+adb logcat | grep -i string   忽略大小写
+adb logcat | grep "^..ABC"  正则表达式过滤
+
+appium -a 127.0.0.1 -p 4723  -U  91QEBPL6946V  --no-reset
+
+-a 192.168.6.109 -p 4723  –U  91QEBPL6946V  --no-reset
+
+adb shell monkey --throttle 4500 -p com.meizu.flyme.calculator -v 10
+
+LOG:adb shell monkey --throttle 100 -p com.sctf.mobile.ykt.android  -v 10 >D:/monkey.log
+
+
+
+adb shell monkey --throttle 100 -p com.sctf.mobile.ykt.android  -v 10
+ adb shell monkey  --throttle 4500 -p com.android.calculator2 -v 10
+
+5LM7N16720003285
+
+appium -a 127.0.0.1 -p 4723  -U  6JR7N16C13003070  --no-reset
+
+236ae424
+
+
+        desired_caps['appPackage'] = 'com.sctf.mobile.ykt.android'
+        desired_caps['appActivity'] = '.GuideActivity'
+        desired_caps['appWaitActivity'] = '.AppIndexActivity'
+
