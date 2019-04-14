@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://E:/work/oa2test-new/.idea/oa2test-new.iml" filepath="E:/work/oa2test-new/.idea/oa2test-new.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/test11.iml" filepath="$PROJECT_DIR$/.idea/test11.iml" />
     </modules>
   </component>
