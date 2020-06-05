@@ -22,7 +22,7 @@ cssselect==1.0.3
 ddt==1.2.0
 decorator==4.3.0
 dis3==0.1.2
-django==1.11.16
+django==1.11.29
 django-crispy-forms==1.7.2
 email==4.0.2
 enum34==1.1.6
