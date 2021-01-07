@@ -45,7 +45,7 @@ itsdangerous==0.24
 Jinja2==2.10
 llvmlite==0.26.0
 locust==0.8
-lxml==4.2.5
+lxml==4.6.2
 macholib==1.10
 maproxy==0.0.12
 MarkupSafe==1.0
