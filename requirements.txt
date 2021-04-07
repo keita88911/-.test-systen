@@ -9,7 +9,7 @@ Automat==0.7.0
 AxmlParserPY==0.0.3
 backports-abc==0.5
 backports.ssl-match-hostname==3.5.0.1
-bottle==0.12.13
+bottle==0.12.19
 certifi==2018.4.16
 cffi==1.11.5
 chardet==3.0.4
