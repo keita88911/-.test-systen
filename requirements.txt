@@ -98,7 +98,7 @@ uiautomator==0.3.2
 uiautomator2==0.1.1
 uniout==0.3.7
 UNKNOWN==0.0.0
-urllib3==1.22
+urllib3==1.26.5
 w3lib==1.19.0
 weditor==0.0.4.dev9
 Werkzeug==0.14.1
