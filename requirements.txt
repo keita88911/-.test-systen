@@ -92,7 +92,7 @@ subprocess32==3.2.7
 tornado==5.0.2
 tqdm==4.5.0
 transaction==2.4.0
-Twisted==18.7.0
+Twisted==22.4.0
 typing==3.6.6
 uiautomator==0.3.2
 uiautomator2==0.1.1
